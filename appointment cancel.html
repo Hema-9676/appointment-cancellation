@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Appointment Cancellation Form</title>
+    <script>
+        function submitForm(event) {
+            event.preventDefault();
+            alert("Appointment cancellation submitted successfully!");
+        }
+    </script>
+</head>
+<body>
+    <h2>Appointment Cancellation</h2>
+    <form onsubmit="submitForm(event)">
+        <label for="patient_id">Patient ID:</label>
+        <input type="text" id="patient_id" name="patient_id" required><br><br>
+
+        <label for="clinic_id">Clinic ID:</label>
+        <input type="text" id="clinic_id" name="clinic_id" required><br><br>
+
+        <label for="clinic_name">Clinic Name:</label>
+        <input type="text" id="clinic_name" name="clinic_name" required><br><br>
+
+        <label for="patient_name">Patient Name:</label>
+        <input type="text" id="patient_name" name="patient_name" required><br><br>
+
+        <label for="appointment_date">Appointment Date:</label>
+        <input type="datetime-local" id="appointment_date" name="appointment_date" required><br><br>
+
+        <label for="appointment_id">Appointment ID:</label>
+        <input type="text" id="appointment_id" name="appointment_id" required><br><br>
+
+        <label for="cancellation_reason">Cancellation Reason:</label>
+        <input type="text" id="cancellation_reason" name="cancellation_reason" required><br><br>
+
+        <label for="provider_id">Provider ID:</label>
+        <input type="text" id="provider_id" name="provider_id" required><br><br>
+
+        <label for="provider_name">Provider Name:</label>
+        <input type="text" id="provider_name" name="provider_name" required><br><br>
+
+        <label for="urgency">Urgency:</label>
+        <input type="number" id="urgency" name="urgency" required><br><br>
+
+        <label for="contact_number">Patient Contact Number:</label>
+        <input type="tel" id="contact_number" name="contact_number" required><br><br>
+
+        <input type="submit" value="Submit Cancellation">
+    </form>
+</body>
+</html>
